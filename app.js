@@ -82,3 +82,9 @@ myTodoList = new Todo_Class(listSection);
 document.querySelector(".addBtn").addEventListener("click", function(){
     myTodoList.add();
 });
+
+document.querySelector("#myInput").addEventListener("keydown", function(e) {
+    if (e.keyCode == 13) {
+        myTodoList.add()
+    }
+})
